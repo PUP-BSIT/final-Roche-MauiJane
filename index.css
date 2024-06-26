@@ -51,19 +51,6 @@ nav .logo a:hover {
   color: var(--primary-color-dark);
 }
 
-nav .checkbox {
-  display: none;
-}
-
-nav input {
-  display: none;
-}
-nav .checkbox {
-  font-size: 2rem;
-  color: var(--primary-color);
-  cursor: pointer;
-}
-
 .nav-content ul {
   display: flex;
   align-items: center;
