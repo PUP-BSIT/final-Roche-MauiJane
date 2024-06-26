@@ -1,0 +1,172 @@
+body {
+  font-family: "Gill Sans", "sans-serif";
+  background-color: #adbada;
+  font-style: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 1%;
+  padding: 0px;
+}
+
+form {
+  color: #fe17c1;
+  background-color: #fe17c1;
+  text-shadow: 2px 1px 1px #000000, 0 0 5px #f0ea93;
+  box-shadow: 0 3px 3px yellow;
+  padding: 20px;
+  border: 1px solid #ffea30;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #fe17c1;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: black 1px 1px 0;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ffea30;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #333;
+}
+
+input[type="text"]:focus {
+  border-color: #ffea30;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 234, 48, 0.8);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fe17c1;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: rgb(98, 48, 86);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: yellow;
+}
+
+button:active {
+  background-color: rgb(98, 48, 86);
+  color: yellow; 
+}
+
+table {
+  width: 200%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ffea30;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #fe17c1;
+  color: #fff;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f6f6eb;
+}
+
+
+@media (max-width: 900px) {
+  form {
+    width: 80%;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  table {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  thead, th {
+    display: none;
+  }
+
+  tbody tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  td {
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 5px 0;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}

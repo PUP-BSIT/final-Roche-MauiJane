@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+    <link rel="stylesheet" href="../crud/movie.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>MOVIES</h1>
+    </div>
+    <form>
+      <input id="movie_id" type="text" placeholder="id" disabled />
+      <input id="title" type="text" placeholder="title" />
+      <input id="movie_description" type="text" 
+            placeholder="movie_description" />
+      <input id="genre" type="text" placeholder="genre" />
+      <input id="director" type="text" placeholder="director" />
+      <input id="release_date" type="date" placeholder="release_date" />
+      <button type="button" onclick="insertMovie()">Insert</button>
+      <button type="button" onclick="updateMovie()">Update</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Movie Description</th>
+          <th>Genre</th>
+          <th>Director</th>
+          <th>Release Date</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="container"></tbody>
+    </table>
+    <script src="../crud/movie.js"></script>  
+  </body>
+</html>
