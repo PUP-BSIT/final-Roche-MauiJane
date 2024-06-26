@@ -52,7 +52,6 @@ nav .logo a:hover {
   color: var(--primary-color-dark);
 }
 
-
 nav .checkbox {
   display: none;
 }
@@ -73,7 +72,7 @@ nav .checkbox {
   list-style: none;
 }
 
-.nav-content  li a {
+.nav-content li a {
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
   text-decoration: none;
@@ -81,9 +80,8 @@ nav .checkbox {
   color: var(--text-dark);
 }
 
-.nav-content li a:hover{
+.nav-content li a:hover {
   border-top-color: var(--secondary-color);
-
 }
 
 .section {
@@ -192,7 +190,6 @@ nav .checkbox {
   line-height: 1.6rem;
   font-size: 16px;
   margin-bottom: 30px;
-  
 }
 
 .my-goals {
@@ -337,7 +334,6 @@ h5 {
   text-transform: capitalize;
   margin-bottom: 60px;
   text-shadow: 2px 2px 2px #000000;
-  
 }
 
 .my-works ul {
