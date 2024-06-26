@@ -2,4 +2,4 @@
 
 ---
 
-### Maui Jane Roche Website [![My Portfolio](https://img.shields.io/badge/Netlify-Maui-pink?style=for-the-badge&logo=netlify)](https://roche-mauijane-portfolio.netlify.app)
+### My Porfolio [![Maui's Website](https://img.shields.io/badge/Netlify-Maui-pink?style=for-the-badge&logo=netlify)](https://roche-mauijane-portfolio.netlify.app)
